@@ -18,7 +18,10 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "g:module": "nest generate module",
+    "g:class": "nest generate class",
+    "g:resolver": "nest generate resolver"
   },
   "dependencies": {
     "@nestjs/common": "^7.5.1",
