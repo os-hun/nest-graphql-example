@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
 import { AppResolver } from './app.resolver';
 import { AppService } from './app.service';
+import { AppController } from './app.controller';
 import { RecipesModule } from './recipes/recipes.module';
 
 @Module({
@@ -13,7 +14,7 @@ import { RecipesModule } from './recipes/recipes.module';
     }),
     RecipesModule,
   ],
-  controllers: [],
+  controllers: [AppController],
   providers: [AppService, AppResolver],
 })
 export class AppModule {}
